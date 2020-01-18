@@ -1,0 +1,4 @@
+version: '3'
+services:
+  <%= container_image %>:
+    image: <%= container_image %>

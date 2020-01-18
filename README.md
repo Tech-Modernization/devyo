@@ -1,3 +1,20 @@
+# In the fast lane
+
+Checkout the samples in `outputs-examples`. There are images showing what the end result looks like & samples of the templated files.
+
+Do it yourself:
+
+```
+docker build . -t devyo
+docker run -v /PATH/TO/THIS/GIT/REPO/ON/YOUR/LOCAL:/devyo -it devyo sh
+
+cd generator-app && npm link && cd -
+mkdir outputs && cd outputs
+yo app
+
+# ... you can do the same for any generator
+```
+
 # Create dev yeoman container
 
 ```

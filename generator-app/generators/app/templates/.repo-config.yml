@@ -1,0 +1,10 @@
+repo_type: single
+technology_type: <%= technology_type %>
+  <%_ if (container_image) { -%>
+  container_image: <%= container_image %>
+  <%_ } else { -%>
+  container_image: none
+  <%_ } -%>
+classification: <%= classification %>
+dependencies:
+  foo:  bar
