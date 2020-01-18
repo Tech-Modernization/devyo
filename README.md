@@ -15,6 +15,10 @@ yo app
 # ... you can do the same for any generator
 ```
 
+App: [demo ready] Creates an application that can be deployed (eg hello world java application that responds on http)
+Container: [Not implmeneted yet] Creates a standalone container image that can be pushed to an artifact store (e.g for a runtime link python or go that can be consumed by something else)
+Vlidation check: [demo] Creates a new validation check folder that confirms to the standard outlined in the validation framework (not shown here but bascially make and docker)
+
 # Create dev yeoman container
 
 ```
