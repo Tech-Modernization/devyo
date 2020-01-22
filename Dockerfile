@@ -10,17 +10,16 @@ RUN echo "Yeoman Doctor will warn about our npm version being outdated. It is ex
 RUN npm install --global --silent yo
 
 RUN npm install --global yo generator-generator
-RUN npm install --global bower
 
-RUN adduser -D -u 501 yeoman && \
-  echo "yeoman ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+#RUN adduser -D -u 501 yeoman && \
+#  echo "yeoman ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-RUN chown yeoman:root /usr/local/lib/node_modules
+RUN chown node:root /usr/local/lib/node_modules
 
-ENV HOME /home/yeoman
+#ENV HOME /home/yeoman
 
-RUN mkdir /devyo && chown yeoman:yeoman /devyo
+RUN mkdir /devyo && chown node:node /devyo
 WORKDIR /devyo
 
-USER yeoman
+USER node
 
